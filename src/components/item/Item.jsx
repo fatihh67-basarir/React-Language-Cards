@@ -1,8 +1,14 @@
 import "./Item.css";
 
-const Item = () => {
+
+
+const Item = ({card}) => {
+  const {name, img, options} = card;
   return (
-    <div>Item</div>
+    <div className="card">
+      <img className="card-logo" src={img} alt="item" />
+      <h3 className="card-title">{name}</h3>
+    </div>
   )
 }
 
